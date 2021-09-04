@@ -1,0 +1,59 @@
+{
+  "id": "de5d9453-714a-4667-b286-b9a2ea70042e",
+  "parentId": "88680fa2-860c-41c0-8b77-6a43fc224089",
+  "rootParentId": "88680fa2-860c-41c0-8b77-6a43fc224089",
+  "name": "Food ordering - yes",
+  "auto": true,
+  "contexts": [
+    "Foodordering-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Foodordering.Foodordering-yes",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "8dc24865-2c54-45df-9cc7-32326f1d10f4",
+          "name": "addon-drinks",
+          "required": true,
+          "dataType": "@addon-drinks",
+          "value": "$addon-drinks",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What drink would you like to have?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Your order is updated and will be delivered with $addon-drinks. Thank you."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

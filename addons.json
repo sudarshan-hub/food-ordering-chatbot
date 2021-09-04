@@ -1,0 +1,9 @@
+{
+  "id": "13c0e240-9867-4148-9a88-02057903a723",
+  "name": "addons",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

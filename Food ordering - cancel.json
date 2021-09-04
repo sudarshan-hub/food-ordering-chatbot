@@ -1,0 +1,45 @@
+{
+  "id": "01cadf7b-d59d-463e-aac6-f1fa6270d83b",
+  "parentId": "88680fa2-860c-41c0-8b77-6a43fc224089",
+  "rootParentId": "88680fa2-860c-41c0-8b77-6a43fc224089",
+  "name": "Food ordering - cancel",
+  "auto": true,
+  "contexts": [
+    "Foodordering-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Foodordering.Foodordering-cancel",
+      "affectedContexts": [
+        {
+          "name": "cancel-followup",
+          "lifespan": 2,
+          "parameters": {}
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Your order is cancelled. Thank you."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

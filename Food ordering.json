@@ -1,0 +1,198 @@
+{
+  "id": "88680fa2-860c-41c0-8b77-6a43fc224089",
+  "name": "Food ordering",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "Foodordering-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "769dc3c6-85c1-429a-a018-6cc911d94787",
+          "name": "foodtype",
+          "required": true,
+          "dataType": "@foodtype",
+          "value": "$foodtype",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Do you want to have veg or non-veg?"
+            },
+            {
+              "lang": "en",
+              "value": "Veg or non-veg?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "d3f70202-49bd-4560-9149-bd05641780f3",
+          "name": "foodname",
+          "required": true,
+          "dataType": "@foodname",
+          "value": "$foodname",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Select the food from the menu\n\nVEG:\nIdly\nDosa\nChapati\nPoori \nPongal\nParotta\nVeg briyani\nTomato rice\nCurd rice\nSambar rice\n\nNON-VEG:\n\nChicken briyani\nMutton briyani\nChicken 65\nChilli chicken \nMutton chukka \nMutton fry \nGrill chicken \nPrawn briyani\nChicken shawarma"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "29a03a0a-64c2-47c4-ace3-a35da666ab5f",
+          "name": "number",
+          "required": true,
+          "dataType": "@sys.number",
+          "value": "$number",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please specify the quantity."
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "4e887eb4-ac73-481b-b871-c22047645fa8",
+          "name": "email",
+          "required": true,
+          "dataType": "@sys.email",
+          "value": "$email",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Could you enter your mail id?"
+            },
+            {
+              "lang": "en",
+              "value": "Please enter your mail id."
+            },
+            {
+              "lang": "en",
+              "value": "May I know your mail id?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "c1afa5f4-977e-4c6b-849b-98fa1a1b6e35",
+          "name": "phone-number",
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "value": "$phone-number",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please enter your phone number."
+            },
+            {
+              "lang": "en",
+              "value": "Could you enter your phone number?"
+            },
+            {
+              "lang": "en",
+              "value": "May I know your phone number?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "b336fd94-488a-45a2-8b58-744042c5ecfc",
+          "name": "address",
+          "required": true,
+          "dataType": "@sys.address",
+          "value": "$address",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter your address"
+            },
+            {
+              "lang": "en",
+              "value": "May I know your address?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "fecd7612-d3b1-42a1-a226-4a9c61b08550",
+          "name": "date-time",
+          "required": true,
+          "dataType": "@sys.date-time",
+          "value": "$date-time",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "When do you want to your food to be delivered?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Your order is confirmed of $foodname ($foodtype) and will be delivered at $address to $email at $date-time.  \n\nDo you want any add-on drinks with your order?\n\nTo cancel the order, type \"cancel\"."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

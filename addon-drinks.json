@@ -1,0 +1,9 @@
+{
+  "id": "801196d2-b255-4047-a011-54704ed67f1a",
+  "name": "addon-drinks",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

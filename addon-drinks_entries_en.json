@@ -1,0 +1,32 @@
+[
+  {
+    "value": "coke",
+    "synonyms": [
+      "coke"
+    ]
+  },
+  {
+    "value": "pepsi",
+    "synonyms": [
+      "pepsi"
+    ]
+  },
+  {
+    "value": "7up",
+    "synonyms": [
+      "7up"
+    ]
+  },
+  {
+    "value": "thumbs up",
+    "synonyms": [
+      "thumbs up"
+    ]
+  },
+  {
+    "value": "mountain dew",
+    "synonyms": [
+      "mountain dew"
+    ]
+  }
+]

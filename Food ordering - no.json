@@ -1,0 +1,39 @@
+{
+  "id": "78d6d8aa-9d44-4a8c-9ea0-67e1b5c29e58",
+  "parentId": "88680fa2-860c-41c0-8b77-6a43fc224089",
+  "rootParentId": "88680fa2-860c-41c0-8b77-6a43fc224089",
+  "name": "Food ordering - no",
+  "auto": true,
+  "contexts": [
+    "Foodordering-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Foodordering.Foodordering-no",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Thank you for ordering with us."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
